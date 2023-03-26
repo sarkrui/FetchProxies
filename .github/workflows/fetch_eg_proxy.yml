@@ -29,6 +29,12 @@ jobs:
     - name: Run fetch script
       run: python main.py
 
+    - name: Upload eg-proxy.txt as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: eg-proxy
+        path: eg-proxy.txt
+
     - name: Configure Git
       run: |
         git config user.name "GitHub Actions"
