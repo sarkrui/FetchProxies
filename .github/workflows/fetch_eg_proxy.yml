@@ -37,5 +37,5 @@ jobs:
     - name: Commit and push changes
       run: |
         git add eg-proxy.txt
-        git commit -m "Update eg-proxy.txt"
+        git diff --cached --quiet || git commit -m "Update eg-proxy.txt"
         git push
