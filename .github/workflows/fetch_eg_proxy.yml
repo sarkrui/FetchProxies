@@ -3,7 +3,8 @@ name: Fetch and Update EG Proxy
 on:
   schedule:
     - cron: '0 0 * * *' # Runs once a day at 00:00 UTC
-
+  workflow_dispatch: # Add this line to allow manual triggering 
+  
 jobs:
   fetch_and_update_eg_proxy:
     runs-on: ubuntu-latest
