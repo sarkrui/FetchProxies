@@ -27,7 +27,7 @@ jobs:
         echo "/usr/lib/chromium-browser/" >> $GITHUB_PATH
 
     - name: Run fetch script
-      run: python fetch_eg_proxy.py
+      run: python main.py
 
     - name: Configure Git
       run: |
