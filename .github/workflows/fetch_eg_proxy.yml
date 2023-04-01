@@ -29,6 +29,7 @@ jobs:
     - name: Run fetch script
       run: python main.py
 
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update eg-proxy.txt
